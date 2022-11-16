@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding-top: 100px;
+    }
+    .test::before {
+        content: "";
+        transform: rotate(45deg);
+        display: block;
+        height: 100px;
+        width: 200px;
+        border-radius: 50px 0px 0px 50px;
+        background-color: red;
+    }
+    .test::after {
+        content: "";
+        transform: rotate(135deg);
+        margin-top: -100px;
+        margin-left: 68px;
+        display: block;
+        height: 100px;
+        width: 200px;
+        border-radius: 50px 0px 0px 50px;
+        background-color: red;
+    }
+
+    .test {
+        margin: 0 auto;
+        display: block;
+        height: 100px;
+        width: 200px;
+        background-color: white;
+    }
+</style>
+<script>
+    setTimeout(changeColor, 1000);
+    function changeColor() {
+        document.getElementById('color::before').style.backgroundColor = "yellow";
+    }
+</script>
+<body>
+    <div id="color" class="test">
+
+    </div>    
+
+</body>
+</html>

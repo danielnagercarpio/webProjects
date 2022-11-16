@@ -2,8 +2,24 @@ import React from 'react';
 import '../styles/AnimalContainer.css'
 
 const AnimalContainer = (props) => {
-    const handleClick = () => { alert("test")};
     const { imageURL, text, name } = props;
+
+    const handleClick = () => { 
+        let audio;
+        switch(name) {
+            case "Ase":
+                audio = new Audio("https://sonidosdeanimales.net/sonidos/asno.mp3");
+                break;
+            case "Girafa":
+                audio = new Audio("https://sonidosdeanimales.net/wp-content/uploads/2014/12/jirafa.mp3");
+                break;
+            case "Lèmur":
+                audio = new Audio("https://sonidosdeanimales.net/wp-content/uploads/2015/11/lemur.mp3");
+                break;
+            }
+        audio.play();
+
+    };
 
     return (
         <div className="card mb-3" style={{maxWidth:"50%"}}>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- credits to: https://css-tricks.com/css-image-replacement/ -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Standard CSS Image Replacement</title>
+	<link rel="stylesheet" href="./css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<style type="text/css" media="screen">
+
+  h1#logo{
+    width: 200px;
+    height: 100px;
+    background: url("https://t3.ftcdn.net/jpg/00/99/89/92/360_F_99899269_is9LgBQsPVPIsYQ08fzkJ6c6yHRnNPqw.jpg");
+    text-indent: -9999px;
+  }
+  h1#logo1{
+    width: 200px;
+    height: 100px;
+    background: url("https://t3.ftcdn.net/jpg/00/99/89/92/360_F_99899269_is9LgBQsPVPIsYQ08fzkJ6c6yHRnNPqw.jpg");
+  }
+  h1#logo1 span{
+    display: none;
+  }
+  h1.logo2{
+    width: 2350px;
+    height: 75px;
+    background: url("https://t3.ftcdn.net/jpg/00/99/89/92/360_F_99899269_is9LgBQsPVPIsYQ08fzkJ6c6yHRnNPqw.jpg") top right;
+    margin: 0 0 0 -2000px;
+  }
+  
+</style>
+<body>
+	<h1 id="logo">is</h1>	
+	<h1 id="logo1"><span>ts</span></h1>
+	<h1 class="logo2">isssasas</h1>	
+</body>
+</html>

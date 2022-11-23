@@ -1,9 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import Mostra from './components/Mostra';
+import Header from './components/Header';
+import MainSection from './components/MainSection';
+
 function App() {
   return (
-    <Mostra/>
+    <div>
+      <Header />
+      <MainSection />
+    </div>
   );
 }
 

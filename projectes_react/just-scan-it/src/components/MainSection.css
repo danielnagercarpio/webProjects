@@ -1,0 +1,27 @@
+#mainsection {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 50;
+  font-size: 30px;
+}
+
+#mainsection h1{
+  padding: 30px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #EC6261;
+  color: #EC6261;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 50;
+  font-size: 30px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#mainsection p{
+}

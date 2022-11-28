@@ -44,6 +44,12 @@
 }
 
 #joinUs:hover {
-  background-color:  #3db4f0 ;
+  background-color:  white;
+  border:1px solid #EC6261;
+  color: #EC6261;
+}
+
+li:hover {
+
 }
 

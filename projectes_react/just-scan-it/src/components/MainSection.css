@@ -8,6 +8,30 @@
   font-size: 30px;
 }
 
+@keyframes changeIt {
+  from {
+	bottom: 30px;
+  }
+  to {
+	bottom: 50px;
+  }
+}
+
+.arrowHover{
+  transition: 1s;
+  position: absolute;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-name: changeIt;
+}
+.arrowHover:hover {
+  color: #3eadaa;
+  position: absolute;
+  bottom: 50px;
+}
+
+
 #mainsection h1{
   padding: 30px;
 }
@@ -21,6 +45,14 @@ button {
   font-size: 30px;
   margin-left: 20px;
   padding: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3eadaa;
+  border-color: white;
+  color: white;
+
 }
 
 #mainsection p{

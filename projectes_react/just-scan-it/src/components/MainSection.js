@@ -4,7 +4,9 @@ const MainSection = () => {
   const paragraphContent = "We provide tools to automate the purchase, customers will only have to scan their own purchase and pay automatically from their mobile by themselves";
 
   return (
+
     <section id="mainsection">
+
       <h1>{title}</h1>
       <p>{paragraphContent}</p>
       <label for="companyEmail">
@@ -12,7 +14,10 @@ const MainSection = () => {
       </label>
       <label for="companyEmailAdress">
 	 <button id="address" name="address">Email Address</button>
-      </label>
+      </label><br/><br/><br/>
+
+
+<i class="fa-solid fa-angles-down arrowHover"></i>
     </section>
   )
 }

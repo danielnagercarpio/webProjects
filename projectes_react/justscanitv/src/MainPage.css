@@ -1,0 +1,14 @@
+/* colors de l'app */
+:root {
+    --green-hard: #3EADA6;
+    --green-afable:  #cef4f1;
+    --white-hard: white;
+    --black-hard: black;
+    --font-helvetica:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    --red-hard: #EC6261;
+}
+
+/* Styles of footer */
+footer {
+    display: none;
+}

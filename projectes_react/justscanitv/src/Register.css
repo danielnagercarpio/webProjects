@@ -1,0 +1,79 @@
+
+.mobile-register-form-section{
+    text-align: center;
+    height: 60%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 0 auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 10%;
+}
+.bg-white {
+    z-index: 5;
+    background-color: white;
+}
+
+.mobile-register-inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    row-gap: 20px;
+    font-size: 20px;
+}
+
+.mobile-register-inputs input {
+    border: 0px;
+    font-size: 20px;
+    height: 30px;
+    border: 1px solid #E2E2E2;
+    justify-content: center;
+    width: 80vw;
+}
+.sign-up-register {
+    flex-grow: 2;
+    background-color: var(--green-hard);
+    color: var(--white-hard);
+    border: 1px solid var(--white-hard);
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.mobile-register-inputs input:focus {
+    outline: none !important;
+    border-bottom: 1px solid var(--green-hard);
+}
+
+.birth-date {
+    text-align: left;
+    background-color: white;
+}
+.birth-date-container {
+    column-gap: 10px;
+    display: flex;
+}
+.birth-date-container > input{
+    width: 100%;
+    flex: 1;
+}
+.birth-date-container > input:last-child{
+    flex: 1;
+}
+.terms-acceptance {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.terms-acceptance > input{
+    flex: 1;
+    width: 100%;
+}
+  
+.terms-acceptance > p{
+    flex:9 ;
+    font-size: 18px;
+}

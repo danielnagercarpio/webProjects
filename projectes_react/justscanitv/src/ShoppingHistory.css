@@ -1,0 +1,61 @@
+.shoppinghistory-content {
+    width: 100vw;
+    background-color: var(--green-afable);
+}
+.shoppingTable {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--white-hard);
+}
+.shoppingTable-title {
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: var(--green-hard);
+    color: var(--white-hard);
+    font-weight: bolder;
+    display: flex;
+}
+.shoppingTable-title div:first-child {
+    flex: 2;
+    background-color: var(--white-hard);
+}
+
+.shoppingTable-title div {
+    flex: 8;
+    background-color: var(--white-hard);
+    color: black;
+    padding: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.shoppingTable-items {
+    padding: 0px 20px 0px 20px;
+    background-color: var(--green-hard);
+    color: var(--white-hard);
+    display: flex;
+}
+
+.shoppingTable-items div:first-child {
+    flex: 2;
+    background-color: var(--white-hard);
+}
+
+.shoppingTable-items div {
+    flex: 8;
+    background-color: var(--white-hard);
+    color: black;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.shoppingTable th{
+    padding: 20px;
+    background-color: var(--green-hard);
+    color: var(--white-hard);
+}
+
+.shoppingTable td{
+    border-bottom: 1px solid var(--green-hard);
+}

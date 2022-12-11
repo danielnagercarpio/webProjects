@@ -1,0 +1,212 @@
+/* Mobile view */
+/* Login
+Format per:
+    - Logo
+    - Username
+    - Password 
+    - Forgot...
+    - Sign In
+    - Register */
+.mobile-content {
+    flex-direction: row;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* sections */
+.mobile-logo-section {
+    background-image: url("./logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30%;
+    /* background-color: var(--white-hard); */
+}
+
+/* Includes form and buttons */
+.mobile-login-form-section {
+    text-align: center;
+    height: 60%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 10%;
+}
+
+.mobile-login-inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    row-gap: 10px;
+    font-size: 20px;
+}
+
+.mobile-login-inputs i {
+    color: var(--green-hard);
+
+}
+
+.mobile-login-inputs input {
+    border: 0px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.mobile-login-inputs input:focus {
+    outline: none !important;
+    border-bottom: 1px solid var(--green-hard);
+}
+
+.mobile-login-inputs .mobile-username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.mobile-login-inputs .mobile-username > i {
+    display: flex;
+    width: 10vw;
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.mobile-login-inputs .mobile-username input {
+    display: flex;
+    flex-grow: 9;
+    height: 5vh;
+
+}
+
+.mobile-login-inputs > .mobile-password {
+    flex-grow: 2;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.mobile-login-inputs .mobile-password>i {
+    display: flex;
+    width: 10vw;
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.mobile-login-inputs .mobile-password input {
+    display: flex;
+    flex-grow: 9;
+    height: 5vh;
+}
+
+.mobile-login-form-section>.forgot-password {
+    flex-grow: 2;
+    font-size: 20px;
+
+}
+
+.mobile-login-form-section>.sign-in {
+    flex-grow: 2;
+    background-color: var(--white-hard);
+    border: 0px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--green-hard);
+
+}
+
+.mobile-login-form-section>.sign-up {
+    flex-grow: 2;
+    background-color: var(--green-hard);
+    color: var(--white-hard);
+    border: 1px solid var(--white-hard);
+    font-size: 20px;
+    border-radius: 15px;
+
+}
+/* PC CONTENT */
+.pc-content {
+    display: none;
+    z-index: 1;
+}
+.pc-login-form-section {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.pc-login-inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.pc-login-inputs div {
+    align-items: center;
+    display: flex;
+    column-gap: 1em;
+}
+.pc-login-inputs i {
+    color: var(--green-hard);
+    font-size: 40px;
+}
+
+.pc-login-inputs > div > input{
+    height: 4em;
+    border: 0px;
+    border-bottom: 1px solid var(--green-hard);
+    width: 280px;
+
+
+}
+.pc-login-inputs > div > input:focus{
+    height: 4em;
+    border: 0px;
+    outline: none !important;
+    border-bottom: 1px solid var(--green-hard);
+
+}
+
+.pc-login-form-section > button {
+    width: 350px;
+    height: 4em;
+}
+.pc-login-title {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    font-style: bolder!important;
+    color: var(--green-hard);
+
+}
+.pc-sign-in {
+    background-color: var(--white-hard);
+    border: 1px solid var(--green-hard);
+    border-radius: 20px;
+    color: var(--green-hard);
+    font-weight: bolder;
+
+}
+.pc-sign-up {
+    background-color: var(--green-hard);
+    border: 0px;
+    border-radius: 20px;
+    color: var(--white-hard);
+    font-weight: bolder;
+
+}
+
+@media screen and (min-width: 50rem){
+    .mobile-content {
+        display: none;
+    }
+    .pc-content {
+        display: block;
+    }
+}

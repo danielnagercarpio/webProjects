@@ -1,0 +1,54 @@
+.pc-index-section {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: 100px;
+}
+
+
+.pc-index-title {
+    font-size: 2em;
+    font-style: bolder;
+    margin: 0 auto;
+}
+
+.pc-index-description {
+    width: 70vw;
+    margin: 0 auto;
+    font-size: 1em;
+}
+.pc-index-inputs {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+}
+.index-clipath {
+    position: absolute;
+    background-color: #E0E2E2;
+    z-index: 2;
+    clip-path: polygon(54% 69%, 91% 56%, 100% 28%, 100% 100%, 70% 100%, 0 100%, 0 66%, 16% 61%);
+}
+.index-clipath-green-afable {
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    clip-path: polygon(54% 65%, 87% 54%, 100% 24%, 100% 100%, 70% 100%, 0 100%, 0 63%, 15% 57%);
+}
+
+.pc-index-inputs input {
+    height: 3em;
+    border: 1px solid var(--red-hard);
+    color: var(--red-hard);
+    font-size: 20px;
+}
+.pc-index-inputs input:focus {
+    height: 3em;
+    border: 1px solid var(--red-hard);
+    color: var(--red-hard);
+    outline: none !important;
+    border-bottom: 1px solid var(--red-hard);
+}

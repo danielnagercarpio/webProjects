@@ -1,0 +1,15 @@
+:root {
+  --deep-taupe: #3B3E48;
+  --carnation-pink: #f7accfff;
+  --alice-blue: #494F5C;
+  --medium-slate-blue: #3B3E48;
+  --russian-violet: #392759ff;    
+}
+.App {
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--medium-slate-blue);
+}

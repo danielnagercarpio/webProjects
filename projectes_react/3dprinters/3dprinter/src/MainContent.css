@@ -1,0 +1,61 @@
+.main-container {
+    display: flex;
+    height: 90vh;
+    background-color: var(--alice-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    column-gap: 5vw;
+    font-size: 20px;
+}
+/**
+  --deep-taupe: #7a5c61ff;
+  --carnation-pink: #f7accfff;
+  --alice-blue: #e8f0ffff;
+  --medium-slate-blue: #6874e8ff;
+  --russian-violet: #392759ff;    
+**/
+
+.article-item:first-child {
+    background-color: var(--russian-violet);
+}
+.article-item:last-child {
+    background-color: var(--russian-violet);
+}
+.article-item {
+    background-color: var(--russian-violet);
+}
+article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-slate-blue);
+    color: white;
+    -webkit-box-shadow: 4px 11px 20px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 11px 20px -7px rgba(0,0,0,0.75);
+box-shadow: 4px 11px 20px -7px rgba(0,0,0,0.75);
+}
+article h1 {
+    flex: 1;    
+}
+article p {
+    flex: 9;
+    background-color: white;
+}
+
+/* Images of categories */
+.category {
+    background-size: 80%;                      
+    background-repeat: no-repeat;
+    background-position: center center;              
+}
+.printer3d {
+    background-image: url('./printer3D.png');
+}
+.figure3d {
+    background-image: url('./figure3D.png');
+}
+.altres3d {
+    background-image: url('./altres3D.png');
+}

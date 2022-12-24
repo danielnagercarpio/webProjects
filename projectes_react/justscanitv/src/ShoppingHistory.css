@@ -2,60 +2,33 @@
     width: 100vw;
     background-color: var(--green-afable);
 }
+.shoppingTable-title {
+    font-weight: bolder;
+    background-color: var(--green-afable);
+}
 .shoppingTable {
     width: 80vw;
     margin: 0 auto;
     margin-top: 20px;
     background-color: var(--white-hard);
 }
-.shoppingTable-title {
-    padding: 20px;
-    padding-bottom: 0px;
-    background-color: var(--green-hard);
-    color: var(--white-hard);
-    font-weight: bolder;
+.shoppingTable > div {
     display: flex;
+    flex-direction: row;
 }
-.shoppingTable-title div:first-child {
-    flex: 2;
-    background-color: var(--white-hard);
-}
-
-.shoppingTable-title div {
-    flex: 8;
-    background-color: var(--white-hard);
-    color: black;
-    padding: 20px;
-    border-bottom: 1px solid black;
-
-}
-
-.shoppingTable-items {
-    padding: 0px 20px 0px 20px;
-    background-color: var(--green-hard);
-    color: var(--white-hard);
+.shoppingTable > div div{
     display: flex;
-}
-
-.shoppingTable-items div:first-child {
-    flex: 2;
-    background-color: var(--white-hard);
-}
-
-.shoppingTable-items div {
-    flex: 8;
-    background-color: var(--white-hard);
-    color: black;
     padding: 20px;
-    border-bottom: 1px solid black;
+    flex: 1;
+    border: 1px solid var(--green-hard);
+    justify-content: center;
+    align-items: center;
 }
-
-.shoppingTable th{
-    padding: 20px;
-    background-color: var(--green-hard);
-    color: var(--white-hard);
+.shoppingTable > div div img{
+    max-width: 100%;
+    max-height: 200px;    
 }
-
-.shoppingTable td{
-    border-bottom: 1px solid var(--green-hard);
+#ShoppingHistory {
+    display: flex;
+    flex-direction: column;
 }

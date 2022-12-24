@@ -5,7 +5,6 @@ const Header = () => {
     return (
         <div>
             <div className='header'>
-                
                 <div className='header-logo-section'><Link to='/'></Link></div>               
                 <div className='header-mobile-section'></div>
                 <button type="button" className="header-about-us" value="About Us" name="sign-in">About Us</button>                

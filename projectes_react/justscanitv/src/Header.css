@@ -10,7 +10,7 @@
 }
 .header-logo-section {    
     flex-grow: 4;
-    height: 90px;
+    height: 100px!important;
     margin-left: 5vw;
     background-image: url('./logo.png');
     background-size: cover;
@@ -45,6 +45,20 @@
     font-weight: bolder;
 
 }
+.header-about-us {
+    background-color: var(--white-hard);
+    border: 0px;
+    color: var(--green-hard);
+    font-weight: bolder;
+}
+.header-about-us > a{
+    background-color: var(--white-hard);
+    border: 0px;
+    color: var(--green-hard);
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .header-sign-in {
     background-color: var(--white-hard);
     border: 0px;

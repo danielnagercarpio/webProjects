@@ -1,9 +1,10 @@
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import './Login.css';
 import './Register.css';
 import Header from './Header';
 
 const Register = () => {
+    const [id, setId] = useState(0);
     return (
         <div>
             {/* Mobile view */}
@@ -12,7 +13,7 @@ const Register = () => {
                 <div className='mobile-register-form-section'>
                     <div className='mobile-register-inputs'>
                         <div><input type="text" id="mobile-emailAddress" name="emailAddress" placeholder='Email Address'/></div>
-                        <div><input type="text" id="mobile-password" name="password" placeholder='Password'/></div>                    
+                        <div><input type="password" id="mobile-password" name="password" placeholder='Password'/></div>                    
                         <div><input type="text" id="mobile-firstname" name="firstname" placeholder='First name'/></div>                    
                         <div><input type="text" id="mobile-lastname" name="lastname" placeholder='Last name'/></div>                    
                         <div className='birth-date'>Birth Date</div>
@@ -27,7 +28,14 @@ const Register = () => {
                         </div>     
 
                     </div>                 
-                    <button type="button" className="sign-up-register" onClick={registerUserMobile} value="Join In" name="sign-up">Join In!</button>
+                    <button type="button" className="sign-up-register" onClick={ ev =>
+                        {
+                            setId(id + 1)
+                            registerUserMobile(id)
+                            alert("registered")
+
+                        }
+                    } value="Join In" name="sign-up">Join In!</button>
                 </div>
             </div>
             {/* pc view */}
@@ -37,19 +45,25 @@ const Register = () => {
                     <div className='pc-login-title'>Register</div>
                     <div className='pc-login-inputs'>
                         <div><input type="text" name="pc-emailAddress" id="pc-emailAddress" placeholder='Email Address'/></div>
-                        <div className='pc-password'><input type="text" id="pc-password" name="pc-password" placeholder='password'/></div>                    
+                        <div className='pc-password'><input type="password" id="pc-password" name="pc-password" placeholder='password'/></div>                    
                         <div className='pc-firstname'><input type="text" id="pc-firstname" name="pc-firstname" placeholder='First name'/></div>                    
                         <div className='pc-lastname'><input type="text" id="pc-lastname" name="pc-lastname" placeholder='Last name'/></div>                    
 
                     </div>                 
-                    <button type="button" className="pc-sign-in" onClick={registerUserPc} value="Sign In" name="sign-in">Register</button>
+                    <button type="button" className="pc-sign-in" onClick={ev => {
+                        setId(id + 1)
+                        registerUserPc(id)
+                        alert("registered")
+                        }
+                    } value="Sign In" name="sign-in">Register</button>
                 </div>
             </div>
 
         </div>
     );
 }
-const registerUserPc = () => {
+const registerUserPc = (ide) => {
+
     let users = JSON.parse(localStorage.getItem('users'));
     if (users == null) {
         users = [];
@@ -62,7 +76,7 @@ const registerUserPc = () => {
     ) { alert("Some Fields are empty")}
     else {
         let user = {
-            id: 1,
+            id: ide,
             user: document.getElementById('pc-emailAddress').value,
             password: document.getElementById('pc-password').value, 
             firstname: document.getElementById('pc-firstname').value,
@@ -73,7 +87,7 @@ const registerUserPc = () => {
     }
 }
 
-const registerUserMobile = () => {
+const registerUserMobile = (ide) => {
     let users = JSON.parse(localStorage.getItem('users'));
     if (users == null) {
         users = [];
@@ -90,7 +104,7 @@ const registerUserMobile = () => {
     ) { alert("Some Fields are empty") }
     else {
         let user = {
-            id: 1,
+            id: ide,
             user: document.getElementById('mobile-emailAddress').value,
             password: document.getElementById('mobile-password').value, 
             firstname: document.getElementById('mobile-firstname').value,

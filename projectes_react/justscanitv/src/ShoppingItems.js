@@ -1,22 +1,38 @@
 import './ShoppingHistory.css';
+import Modal from './Modal';
 const ShoppingItems = ({history}) => {
-    console.log("hey",history.products);
     let product = [];
+    let modals = [];
     for (let i = 0; i < history.products.length; i++) {
+        modals.push(<Modal imgLink={history.products[i].image} />)
         product.push(
             <div className='shoppingTable-items'>
-                <div><img src={history.products[i].image}></img></div>
-                <div>Tomate frito Carrefour pack de 3 briks de 390 g. </div>
-                <div>Tomate (157 g para elaborar 100 g de producto), aceite de girasol, azúcar, almidón modificado de maíz, hortalizas (cebolla y ajo), sal y acidulante: ácido cítrico.</div>
-                <div>1,45 €</div>
-                <div>14-12-2022</div>
+                <div
+                onClick={e => {
+                    function showModal() {
+                        document.getElementById(history.products[i].image).style.display = "block";
+                    }
+                    showModal()
+                }}
+                
+                ><img src={history.products[i].image}></img>
+                </div>
+                <div><p>Tomate frito Carrefour pack de 3 briks de 390 g. </p></div>
+                <div><p>Tomate (157 g para elaborar 100 g de producto), aceite de girasol, azúcar, almidón modificado de maíz, hortalizas (cebolla y ajo), sal y acidulante: ácido cítrico.</p></div>
+                <div><p>1,45 €</p></div>
+                <div><p>14-12-2022</p></div>
             </div>
         );
     }
     return (
-        <div id="s">
+        <>
+        {modals}
+
+        <div id="products">
             {product}
         </div>
+
+        </>
     );
 
 }

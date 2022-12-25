@@ -1,0 +1,83 @@
+#registerForm{
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+	margin: 0 auto;
+	margin-top: 60px;
+	padding: 20px;
+	border-radius: 15px;
+	-webkit-box-shadow: 3px 2px 39px -13px rgba(62,173,166,1);
+	-moz-box-shadow: 3px 2px 39px -13px rgba(62,173,166,1);
+	box-shadow: 3px 2px 39px -13px rgba(62,173,166,1);
+        row-gap: 30px;	
+	animation-duration:0.8s;
+	animation-name: slideRegister;
+        animation-fill-mode: forwards;
+}
+
+#registerForm i {
+  font-size: 30px;
+}
+
+#registerForm li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#registerForm input{
+  height: 30px;
+  border: #f0f0f0 1px solid;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+#registerForm label{
+	font-weight: bolder;
+}
+body {
+	animation-duration:8s;
+	animation-name: changeBackground;
+        animation-fill-mode: forwards;
+}
+
+@keyframes slideRegister {
+  from {
+    margin-left: -1000px;
+  }
+  to {
+    margin-left: 400px;
+    margin-top: 60px;
+  }
+
+}
+	
+@keyframes moveBall {
+  from {
+    position: absolute;
+    margin-left: 1vw;
+  }
+  to {
+    position: absolute;
+    margin-right: 1vw;
+  }
+}
+
+.desert-ball {
+  animation-duration:3s;
+  animation-name: moveBall;
+  animation-fill-mode: forwards;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.desert-ball:before {
+  content: "";
+  display: block;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  transform: rotate(45deg);
+}

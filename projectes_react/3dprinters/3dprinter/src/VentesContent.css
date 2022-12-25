@@ -1,0 +1,69 @@
+.ventes-container {
+    display: flex;
+    height: 90vh;
+    background-color: var(--alice-blue);
+    display: flex;
+    padding: 50px;
+    column-gap: 5vw;
+    font-size: 20px;
+}
+.preu {
+    color: red;
+}
+.aside {
+    flex:2;
+}
+.mainContent-ventes {
+    height: 90vh;
+    background-color: var(--alice-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    column-gap: 5vw;
+    font-size: 20px;
+}
+
+.ventes-Description {
+    text-align: left;
+    color: black;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    background-color: var(--medium-slate-blue);
+    color: white;
+    -webkit-box-shadow: 4px 11px 20px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 11px 20px -7px rgba(0,0,0,0.75);
+    box-shadow: 4px 11px 20px -7px rgba(0,0,0,0.75);
+}
+article p:first-child {
+    flex: 8;
+    background-color: white;
+}
+article p:first-child img {
+    height: 15em;
+}
+
+article p {
+    flex: 4;
+    background-color: white;
+}
+
+/* Images of categories */
+.category {
+    background-size: 80%;                      
+    background-repeat: no-repeat;
+    background-position: center center;              
+}
+.printer3d {
+    background-image: url('./printer3D.png');
+}
+.figure3d {
+    background-image: url('./figure3D.png');
+}
+.altres3d {
+    background-image: url('./altres3D.png');
+}

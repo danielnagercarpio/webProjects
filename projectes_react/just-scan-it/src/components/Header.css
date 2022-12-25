@@ -52,4 +52,9 @@
 li:hover {
 
 }
-
+@media only screen and (max-width: 600px) {
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -21,6 +21,11 @@ header nav ul {
     color: #ddf5f4;
     transform: rotate(45deg);
 }
+a {
+    text-decoration: none!important;
+    color: black!important;
+    font-weight: bolder;
+}
 header nav ul {
     background-color: white;
     box-shadow: 2px 2px 2px #ddf5f4;

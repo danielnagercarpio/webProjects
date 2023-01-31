@@ -71,6 +71,9 @@ header nav ul li:first-child:hover {
     height: 100vh;    
     color: #ddf5f4;
 }
+.main-section h1 {
+    font-size: 20px;
+}
 footer {
     width: 100vw;
     height: 10vh;

@@ -1,0 +1,58 @@
+POST http://localhost:9000/api/dish HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Truita de patates",
+    "ingredients": ["patata", "ceba"],
+    "price": 29.90,
+    "origin": "Malasia"
+}
+###
+GET http://localhost:9000/api/dishes HTTP/1.1
+###
+GET http://localhost:9000/api/dish/63ee5bc76a1e732977a0bd18 HTTP/1.1
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PUT http://localhost:9000/api/dish/63ee5ace6a1e732977a0bd14 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Truita de patates",
+    "ingredients": ["ous"],
+    "price": 12.00,
+    "origin": "Spain"
+}
+###
+DELETE http://localhost:9000/api/dish/63ee5ace6a1e732977a0bd14 HTTP/1.1
+Content-Type: application/json
+
+{
+
+}
+

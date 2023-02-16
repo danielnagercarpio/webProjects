@@ -51,8 +51,15 @@ echo $asoc['java']['bastion'];
 // you can print the value of value in somearrayInfo doing this:
 echo $asoc['java']['somearrayInfo']['value'];
 
+// true casts to 1, 19.8 cast to int (19)
+$arraytest = [2 => null, true => 'boolean', 19.8 => 'Di nou'];
 
 
+// Removes the last item and return the item removed
+echo array_pop($arraytest);
+
+// Removes the first item and return the item removed
+echo array_shift($arraytest);
 
 
 

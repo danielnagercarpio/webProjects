@@ -1,13 +1,13 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Sant Vicens App" width="200"></a>
+  <img src="https://raw.githubusercontent.com/Dozom/webProjects/master/reactnativeMaps/mapsDNager/assets/logo.png" alt="Sant Vicens App" width="200">
   <br>
   Sant Viçens APP
   <br>
 </h1>
 
-<h4 align="center">A minimal Application built with expo.<a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">A minimal Application built with expo.<a href="https://expo.dev" target="_blank">Expo Dev</a>.</h4>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
@@ -44,15 +44,9 @@ $ npm start
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-
-## Download
-
-You can [download](https://github.com/Dozom/webProjects/tree/master/reactnativeMaps/mapsDNager) the latest installable version of Markdownify for Windows, macOS and Linux.
-
 ## Credits
 
 Daniel Nager Carpio
-
 
 ## License
 

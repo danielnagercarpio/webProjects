@@ -1,0 +1,30 @@
+.select-starter {
+    display: flex;
+    flex-direction: column;
+}
+.select-starter div {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6a1b9a;
+    border-radius: 5px;
+}
+.select-starter ul {
+    margin: 0;
+    padding-left: 10;
+    padding-right: 10;
+}
+.select-starter li {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 5px 5px;
+    border-bottom: 2px solid #6a1b9a;
+    border-left: 2px solid #6a1b9a;
+    border-right: 2px solid #6a1b9a;
+}

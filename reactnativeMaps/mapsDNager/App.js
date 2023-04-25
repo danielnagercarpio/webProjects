@@ -47,7 +47,28 @@ export default function App() {
       longitude: 1.8508710460327185,
       latitudeDelta: 0.00922,
       longitudeDelta: 0.00421
-    }
+    },
+    // Ajuntament de sant vicens de castellet
+    {
+      latitude: 41.66620085818458,
+      longitude: 1.864103330688479,
+      latitudeDelta: 0.00922,
+      longitudeDelta: 0.00421
+    },
+    // Sant Jaume de vallhonesta
+    {
+      latitude: 41.67806881910427,
+      longitude: 1.9027131613769581,
+      latitudeDelta: 0.00922,
+      longitudeDelta: 0.00421
+    },
+   // Sant Pere de vallhonesta
+   {
+    latitude: 41.67434775461053,
+    longitude: 1.8877531846557605,
+    latitudeDelta: 0.00922,
+    longitudeDelta: 0.00421
+  } 
   ];
   const mapRef = useRef(null);
   const [region, setRegion] = useState(coordenades[0]);
@@ -58,11 +79,11 @@ export default function App() {
     fontSize: 20,
     backgroundColor: "lightblue"
   }
-  const goToCastell = () => {
+  const goToPontLlobregat = () => {
     pressTouch(0);
     setLocationStyle(locationTextStyles);
-    setLocationText("Castell de Sant Viçens");
-    mapRef.current.animateToRegion(coordenades[2], 500);
+    setLocationText("Pont del Llobregat");
+    mapRef.current.animateToRegion(coordenades[0], 500);
   };
   const goToAnselmClave = () => {
     pressTouch(0);
@@ -70,12 +91,31 @@ export default function App() {
     setLocationText("Monument Anselm Clavé");
     mapRef.current.animateToRegion(coordenades[1], 500);
   };
-  const goToPontLlobregat = () => {
+  const goToCastell = () => {
     pressTouch(0);
     setLocationStyle(locationTextStyles);
-    setLocationText("Pont del Llobregat");
-    mapRef.current.animateToRegion(coordenades[0], 500);
+    setLocationText("Castell de Sant Viçens");
+    mapRef.current.animateToRegion(coordenades[2], 500);
   };
+  const goToAjuntament = () => {
+    pressTouch(0);
+    setLocationStyle(locationTextStyles);
+    setLocationText("Ajuntament de Sant Viçens");
+    mapRef.current.animateToRegion(coordenades[3], 500);
+  };
+  const goToSantJaume = () => {
+    pressTouch(0);
+    setLocationStyle(locationTextStyles);
+    setLocationText("Sant Jaume de Vallhonesta");
+    mapRef.current.animateToRegion(coordenades[4], 500);
+  };
+  const goToSantPere = () => {
+    pressTouch(0);
+    setLocationStyle(locationTextStyles);
+    setLocationText("Sant Pere de Vallhonesta");
+    mapRef.current.animateToRegion(coordenades[5], 500);
+  };
+
   return (
     <View style={styles.container}>
       <Image source={require('./assets/logo.png')} style={styles.logoStyle}/>
@@ -90,6 +130,17 @@ export default function App() {
           <Image source={require('./assets/aclave.png')} style={styles.imageStyle} title="Go to Castell" />
         </TouchableHighlight>
       </View>
+      <View style={styles.imageContainer}>
+        <TouchableHighlight onPress={() => goToAjuntament()} >
+          <Image source={require('./assets/ajuntament.png')} style={styles.imageStyle} title="Go to Castell" />
+        </TouchableHighlight>
+        <TouchableHighlight onPress={() => goToSantJaume()} >
+          <Image source={require('./assets/santjaume.png')} style={styles.imageStyle} title="Go to Castell" />
+        </TouchableHighlight>
+        <TouchableHighlight onPress={() => goToSantPere()} >
+          <Image source={require('./assets/santpere.png')} style={styles.imageStyle} title="Go to Castell" />
+        </TouchableHighlight>
+      </View>
       <MapView
         ref={mapRef}
         style={styles.map}
@@ -98,7 +149,10 @@ export default function App() {
       >
         <Marker coordinate={coordenades[0]} pinColor="green" />
         <Marker coordinate={coordenades[1]} pinColor="blue"/>
-        <Marker coordinate={coordenades[2]} />
+        <Marker coordinate={coordenades[2]} pinColor="purple"/>
+        <Marker coordinate={coordenades[3]} pinColor="orange"/>
+        <Marker coordinate={coordenades[4]} pinColor="brown"/>
+        <Marker coordinate={coordenades[5]} />
       </MapView>
       <Text style={locationStyle}>{locationText}</Text>
     </View>

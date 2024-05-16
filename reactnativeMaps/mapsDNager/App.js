@@ -161,6 +161,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
+    zIndex: 0,
     flex: 1,
     alignItems: "center",
   },
@@ -187,8 +188,8 @@ const styles = StyleSheet.create({
     padding: 10
   },
   imageStyle: {
-    width: 110,
-    height: 110
+    width: 55,
+    height: 55
   },
   logoStyle: {
     marginTop: 50,

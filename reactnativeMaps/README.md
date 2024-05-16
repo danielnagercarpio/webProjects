@@ -16,7 +16,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/Dozom/webProjects/master/reactnativeMaps/mapsDNager/santvicensdnager.gif)
+![screenshot](https://raw.githubusercontent.com/Dozom/webProjects/master/reactnativeMaps/santvicensdnager.gif)
 
 ## Key Features
 

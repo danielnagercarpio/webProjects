@@ -1,9 +1,9 @@
 
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/Dozom/webProjects/master/reactnativeMaps/mapsDNager/assets/logo.png" alt="Sant Vicens App" width="200">
+  <img src="https://raw.githubusercontent.com/Dozom/webProjects/master/reactnativeMaps/assets/logo.png" alt="Sant Vicens App" width="200">
   <br>
-  Sant Viçens APP
+  Sant Viçens Monumental APP
   <br>
 </h1>
 
@@ -22,17 +22,19 @@
 
 * This is a pac of sant vicens, just to learn a bit about react native and expo apps.
 
+This application uses different locations, once loaded you can go to 4 places depending on which image you're touching.
+When ou go to the place, then you will see a text message which displays the actual location.
 
-## How To Use
+## Installation
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone <url>
+$ git clone https://github.com/Dozom/webProjects
 
 # Go into the repository
-$ cd <repo>
+$ cd ./webProjects/reactnativeMaps
 
 # Install dependencies
 $ npm install

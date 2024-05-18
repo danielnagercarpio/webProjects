@@ -12,7 +12,7 @@ THINGS TO DO...
 - Well, in order to keep working everyday to learn about software programming, I have created this TODO LIST just to have things in minds which I
 can improve or do in the day. Every day I will updating the file.
 
-under pythonProjects/banner_creator_python i have an old code which I can refactor in the morning before going to play bowling hehe.
+- [x] Under pythonProjects/banner_creator_python i have an old code which I can refactor in the morning before going to play bowling hehe.
 Maybe I do some contributions tomorrow, but the main contrib will be this. 
 
 BUT I KNOW YEAH I KNOW, I'M JUST TALKING TO MYSELF... 

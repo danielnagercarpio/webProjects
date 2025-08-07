@@ -5,21 +5,18 @@ const AnimalContainer = (props) => {
     const { imageURL, text, name } = props;
 
     const handleClick = () => {
-        let audio;
-        switch (name) {
-            case "Ase":
-                audio = new Audio("https://sonidosmp3gratis.com/sounds/shrek.mp3");
-                break;
-            case "Girafa":
-                audio = new Audio("https://sonidosmp3gratis.com/sounds/jirafa-.mp3");
-                break;
-            case "Lèmur":
-                audio = new Audio("https://www.sonidosmp3gratis.com/sounds/008698831_prev.mp3");
-                break;
-            default:
-                audio = new Audio("");
+        let audio = null;
+        if (name === "Ase") {
+            audio = new Audio("https://sonidosmp3gratis.com/sounds/shrek.mp3");
+        } else if (name === "Girafa") {
+            audio = new Audio("https://sonidosmp3gratis.com/sounds/jirafa-.mp3");
+        } else if (name === "Lèmur") {
+            audio = new Audio("https://www.sonidosmp3gratis.com/sounds/008698831_prev.mp3");
         }
-        audio.play();
+
+        if (audio) {
+            audio.play();
+        }
 
     };
 

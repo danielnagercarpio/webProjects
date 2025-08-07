@@ -16,6 +16,8 @@ const AnimalContainer = (props) => {
             case "Lèmur":
                 audio = new Audio("https://www.sonidosmp3gratis.com/sounds/008698831_prev.mp3");
                 break;
+            default:
+                audio = new Audio("");
         }
         audio.play();
 

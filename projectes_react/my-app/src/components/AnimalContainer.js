@@ -24,7 +24,7 @@ const AnimalContainer = (props) => {
         <div className="card mb-3" style={{ maxWidth: "50%" }}>
             <div className="row no-gutters">
                 <div onClick={handleClick} className="col-md-4">
-                    <img className='image' src={imageURL}></img>
+                    <img className='image' alt="image_not_found" src={imageURL}></img>
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
